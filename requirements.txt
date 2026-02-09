@@ -1,0 +1,25 @@
+# This file may be used to create an environment using:
+# $ conda create --name <env> --file <this file>
+# platform: linux-64
+accelerate=1.0.1=pypi_0
+bert-score=0.3.13=pypi_0
+bitsandbytes=0.42.0=pypi_0
+datasets=3.1.0=pypi_0
+evaluate=0.4.3=pypi_0
+huggingface-hub=0.30.2=pypi_0
+numpy=1.24.4=pypi_0
+pandas=2.0.3=pypi_0
+peft=0.13.2=pypi_0
+rouge-score=0.1.2=pypi_0
+sacrebleu=2.5.1=pypi_0
+safetensors=0.5.3=pypi_0
+scikit-learn=1.3.2=pypi_0
+scipy=1.10.1=pypi_0
+sentence-transformers=3.2.1=pypi_0
+sentencepiece=0.2.0=pypi_0
+tokenizers=0.20.3=pypi_0
+torch=2.4.1=pypi_0
+torchvision=0.19.1=pypi_0
+tqdm=4.67.1=pypi_0
+transformers=4.46.3=pypi_0
+triton=3.0.0=pypi_0
