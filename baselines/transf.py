@@ -14,6 +14,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torch.utils.data import DataLoader, Dataset 
 from utils.a5evaluates import compute_metrics
+from sklearn.model_selection import train_test_split
 
 parser = argparse.ArgumentParser(description="use --help for investigating input params")
 parser.add_argument('--hf-dataset', type=str, required=True, help="Huggingface dataset name")
@@ -106,14 +107,15 @@ import datasets
 import pandas as pd
 
 if args.hf_dataset == 'wiki':
-    args.hf_dataset = 'ariflaksito/wikisa1'
+    train_csv = "data/wikisa1/train.csv"
+    test_csv = "data/wikisa1/test.csv"
 elif args.hf_dataset == 'exa':
-    args.hf_dataset = 'ariflaksito/exarank1'
-data = datasets.load_dataset(args.hf_dataset)
+    train_csv = "data/exarank1/train.csv"
+    test_csv = "data/exarank1/test.csv"
 
-train_df = pd.DataFrame(data["train"])
-val_df = pd.DataFrame(data["validation"])
-test_df = pd.DataFrame(data["test"])
+train_df = pd.read_csv(train_csv)
+train_df, val_df = train_test_split(train_df, test_size=0.1, random_state=42)
+test_df = pd.read_csv(test_csv)
 
 test_df = test_df.sample(n=args.test_size, random_state=42).reset_index(drop=True)
 
