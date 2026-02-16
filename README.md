@@ -15,12 +15,12 @@ pip install -r requirements.txt
 
 ### 2. Run
 ```bash
-python -m run_generate [ARGS]
+python -m run_generate.py [ARGS]
 ```
 
 ### 3. Example
 ```bash
-python -m run_generate \
+python -m run_generate.py \
   --hf-token YOUR_TOKEN \
   --dataset wiki \
   --test-size 2000 \
