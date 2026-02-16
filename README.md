@@ -34,7 +34,7 @@ python -m run_generate.py \
 ```
 
 ## WikiSA dataset
-Code to construct WikiSA dataset are availabe at directory data/wikisa/
+Code to construct the WikiSA dataset is available at the directory ```data/wikisa/```
 
 ## Output
 Each run generates:
