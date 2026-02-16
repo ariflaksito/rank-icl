@@ -1,4 +1,4 @@
-# Rank-ICL: Ranking-based In-context Learning for Search Results Explanations Improvement
+# Rank-ICL: Ranking-based In-context Learning for Search Result Explanation
 
 This repository provides code to generate **query–document relevance explanations** using large language models (LLMs), supporting **zero-shot**, **few-shot**, and **Rank-ICL** settings.
 
@@ -41,11 +41,11 @@ Each run generates:
 - CSV output (--output) with reference and generated explanations
 - Metrics log appended to experiment_results.csv
 
-## Citation
+<!-- ## Citation
 ```bibtex
 @inproceedings{rank-icl2026,
   title={...},
   author={...},
   year={2026}
 }
-```
+``` -->
