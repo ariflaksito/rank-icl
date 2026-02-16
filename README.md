@@ -30,7 +30,8 @@ python -m run_generate.py \
   --model meta-llama/Meta-Llama-3-8B-Instruct \
   --top-p 0.8 --top-k 10 --temp 0.1 \
   --max-tokens 100 --penalty 1.0 \
-  --output outputs/wiki_rag_sbert.csv
+  --output outputs/wiki_llama_sbert.csv \
+  --metrics-log logs/wiki_llama_sbert.csv \
 ```
 
 ## WikiSA dataset
@@ -39,7 +40,7 @@ Code to construct the WikiSA dataset is available at the directory `data/wikisa/
 ## Output
 Each run generates:
 - CSV output (--output) with reference and generated explanations
-- Metrics log appended to experiment_results.csv
+- Metrics log (--metrics-log) evaluate using ROUGE-1, METEOR, BERTScore metrics
 
 <!-- ## Citation
 ```bibtex
