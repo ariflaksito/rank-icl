@@ -3,7 +3,7 @@
 import warnings
 warnings.filterwarnings('ignore')
 
-from transformers import BertTokenizerFast, logging
+from transformers import BertTokenizerFast, logging # type: ignore
 logging.set_verbosity_error()
 
 import math
