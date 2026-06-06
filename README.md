@@ -11,7 +11,7 @@ While large language models (LLMs) have demonstrated strong performance across a
 Rather than relying on randomly chosen demonstrations, relevant examples are dynamically retrieved based on retrieval functions to the input query–document pair.
 Evaluation on WikiSA and ExaRank shows that ranking-based few-shot prompting generally improves over zero-shot prompting and achieves competitive performance against random-shot prompting. However, its effectiveness varies across datasets, indicating that retrieval-based demonstration selection is beneficial but not uniformly superior in all settings.
 
-## Models
+
 ## Models
 
 We evaluate three decoder-only LLMs: **[LLaMA 3.1-8B](https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct)**, **[Qwen2-7B](https://huggingface.co/Qwen/Qwen2-7B-Instruct)**, and **[Mistral-7B](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3)**.
