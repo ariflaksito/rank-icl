@@ -61,6 +61,68 @@ Best decoding settings per model and dataset (used consistently across zero-shot
 
 ## Prompts
 
+### WikiSA
+
+**Zero-shot**
+```
+You are an AI assistant that explain how query and document are related.
+Provide a few words of aspect explanation max 5 words.
+query: {query}.
+document: {doc}.
+aspect:
+```
+
+**Few-shot / Rank-ICL**
+```
+You are an AI assistant that explain how query and document are related.
+I give you n examples below:
+Example 1
+query: {query}.
+document: {doc}.
+aspect: {explanation}.
+...
+Example n
+query: {query}.
+document: {doc}.
+aspect: {explanation}.
+Provide a few words of aspect explanation max 5 words.
+query: {query}.
+document: {doc}.
+aspect:
+```
+
+---
+
+### ExaRank
+
+**Zero-shot**
+```
+You are an AI assistant that explain how query and document are related.
+Provide an explanation if the query is related to the document.
+query: {query}.
+document: {doc}.
+explanation:
+```
+
+**Few-shot / Rank-ICL**
+```
+You are an AI assistant that explain how query and document are related.
+I give you n examples below:
+Example 1
+query: {query}.
+document: {doc}.
+explanation: {explanation}.
+...
+Example n
+query: {query}.
+document: {doc}.
+explanation: {explanation}.
+Provide an explanation if the query is related to the document.
+query: {query}.
+document: {doc}.
+explanation:
+```
+
 
 
 <!--add poster later-->
