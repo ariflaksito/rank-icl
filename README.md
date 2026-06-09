@@ -155,8 +155,9 @@ python -m run_generate.py \
   --metrics-log logs/wiki_llama_sbert.csv \
 ```
 
-## WikiSA dataset
-Code to construct the WikiSA dataset is available at the directory `data/wikisa/`
+## Dataset
+- Code to construct the WikiSA dataset is available at the directory `data/wikisa/`
+- The ExaRank dataset is available at the directory `data/exarank1/`
 
 ## Output
 Each run generates:
