@@ -2,7 +2,7 @@
 
 This repository provides code to generate **query–document relevance explanations** using large language models (LLMs), supporting **zero-shot**, **few-shot**, and **Rank-ICL** settings.
 
-![rank-icl framework](Rank-ICL-dark.png)
+![rank-icl framework](images/rank_icl_dark.png)
 
 ---
 ### Abstract
