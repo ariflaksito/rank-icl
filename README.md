@@ -158,7 +158,7 @@ python -m run_generate.py \
 ```
 
 ## Dataset
-- Code to construct the WikiSA dataset is available at the directory `data/wikisa/`
+- Code to construct the WikiSA dataset is available at the directory `data/wikisa1/`
 - The ExaRank dataset is available at the directory `data/exarank1/`
 
 ## Output
