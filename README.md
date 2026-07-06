@@ -166,11 +166,17 @@ Each run generates:
 - CSV output (--output) with reference and generated explanations
 - Metrics log (--metrics-log) evaluate using ROUGE-1, METEOR, BERTScore metrics
 
-<!-- ## Citation
+## Citation
 ```bibtex
 @inproceedings{rank-icl2026,
-  title={...},
-  author={...},
-  year={2026}
+  title={Rank-ICL: Ranking-based In-context Learning for Search Result Explanation},
+  author={Laksito, A. and Alqarni, A. and Stevenson, M.},
+  booktitle={Proceedings of the 2026 ACM Conference on Innovative Concepts and Theories in Information Retrieval (ICTIR '26)},
+  year={2026},
+  publisher={Association for Computing Machinery},
+  address={Melbourne, VIC, Australia},
+  isbn={979-8-4007-2600-2},
+  doi={10.1145/3805713.3820420},
+  note={In Press}
 }
-``` -->
+```
