@@ -1,17 +1,20 @@
 # Rank-ICL: Ranking-based In-context Learning for Search Result Explanation
 
-This repository provides code to generate **query–document relevance explanations** using large language models (LLMs), supporting **zero-shot**, **few-shot**, and **Rank-ICL** settings.
+<div align="center">
+  <a href="mailto:alaksito1@sheffield.ac.uk">Arif Laksito</a>, Aali Alqarni and Mark Stevenson
+  <p>School of Computer Science, University of Sheffield, Sheffield, UK</p>
+</div>
 
-![rank-icl framework](images/rank_icl_dark.png)
-
----
-### Abstract
+## Abstract
 
 Explanations in search results typically consist of text snippets or short passages presented alongside retrieved documents to help users efficiently assess relevance. 
 While large language models (LLMs) have demonstrated strong performance across a wide range of language understanding and generation tasks, prior work on their use to generate explanations in search results remains relatively sparse. In this study, we investigate the use of decoder-only LLMs to generate explanations in the search results. To improve explanation quality in low-supervision settings, we introduce a ranking-based strategy for selecting informative few-shot examples in in-context learning. 
 Rather than relying on randomly chosen demonstrations, relevant examples are dynamically retrieved based on retrieval functions to the input query–document pair.
 Evaluation on WikiSA and ExaRank shows that ranking-based few-shot prompting generally improves over zero-shot prompting and achieves competitive performance against random-shot prompting. However, its effectiveness varies across datasets, indicating that retrieval-based demonstration selection is beneficial but not uniformly superior in all settings.
-### Results
+
+![rank-icl framework](images/rank_icl_dark.png)
+
+## Results
 ![Results Table](images/results_table_dark.png)
 ## Models 
  
