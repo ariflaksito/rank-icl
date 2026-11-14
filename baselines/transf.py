@@ -143,7 +143,7 @@ val_dataloader = DataLoader(val_dataset, batch_size=args.batch, shuffle=False)
 test_dataset = TransformerDataset(test_src, test_tgt, tokenizer)
 test_dataloader = DataLoader(test_dataset, batch_size=args.batch, shuffle=False)
 
-"""# Train GenEx model"""
+"""# Train a VanilaTransformer model"""
 
 model = TransformerEncoderDecoder(vocab_size=tokenizer.vocab_size).to(device)
 optimizer = torch.optim.Adam(model.parameters(), lr=args.lr)
